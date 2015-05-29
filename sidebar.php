@@ -7,7 +7,7 @@
  */
 ?>
 
-<div id = "secondary" class = "widget-area col-lg-4 col-md-4 col-sm-12" role = "complementary">
+<div id = "secondary" class = "widget-area col-sm-12 col-md-4" role = "complementary">
 	
 	<?php do_action( 'before_sidebar' ); ?>
 

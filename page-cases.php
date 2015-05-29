@@ -12,14 +12,6 @@ get_header(); ?>
 
 <div class = "clearfix">
 
-	<!-- <div class = "visible-xs-inline-block">
-		<img class = "img-cases img-padrao-xs" src = "<?php bloginfo('stylesheet_directory');?>/images/padrao_img_xs.png" />
-	</div>
-
-	<div class = "hidden-xs img-padrao" style = "top: 115px; left: 10%">
-		<img class = "img-cases" style="background-attachment: fixed;" src = "<?php bloginfo('stylesheet_directory');?>/images/padrao_img.png" />
-	</div> -->
-
 	<div style = "background: url(<?php bloginfo('stylesheet_directory');?>/images/bg_case.jpg); background-size: cover; background-position: bottom; height:300px">
 		<div class = "container">
 			<div class = "t-texto" style = "padding-top: 180px; color: white; font-size: 4em">
@@ -29,7 +21,6 @@ get_header(); ?>
 	</div>
 
 	<div class = "container txt-empresa">
-		<!-- <div class = "col-lg-offset-5 col-sm-offset-4 col-lg-7 col-sm-8" style = "padding: 0 0 60px 0"> -->
 			<div class="clearfix postagem-index" style="height: auto">
 			 	<?php
 			 	if ( have_posts() ) :

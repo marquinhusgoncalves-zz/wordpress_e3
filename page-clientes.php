@@ -10,7 +10,7 @@ Author URI: http://behance.net/danielsmota
 
 get_header(); ?>
 
-<div class = "clearfix">
+<div class = "clearfix" style = "min-height: 570px">
 
 	<div class = "visible-xs-inline-block">
 		<img class = "img-clientes img-padrao-xs" src = "<?php bloginfo('stylesheet_directory');?>/images/padrao_img_xs.png" />

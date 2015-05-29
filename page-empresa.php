@@ -12,14 +12,6 @@ get_header(); ?>
 
 <div class = "clearfix">
 
-	<!-- <div class = "visible-xs-inline-block">
-		<img class = "img-empresa img-padrao-xs" src = "<?php bloginfo('stylesheet_directory');?>/images/padrao_img_xs.png" />
-	</div>
-
-	<div class = "hidden-xs img-padrao" style = "top: 115px">
-		<img class = "img-empresa" style="background-attachment: fixed;" src = "<?php bloginfo('stylesheet_directory');?>/images/padrao_img.png" />
-	</div> -->
-
 	<div style = "background: url(<?php bloginfo('stylesheet_directory');?>/images/bg_empresa.jpg); background-size: cover; background-position: bottom; height:300px">
 		<div class = "container">
 			<div class = "t-texto" style = "padding-top: 140px; color: white; font-size: 4em">

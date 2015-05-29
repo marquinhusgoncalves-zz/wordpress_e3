@@ -105,94 +105,19 @@
 	}
 	add_action( 'widgets_init', 'e3_widgets_init' );
 
-  // Catch the second image
-  function catch_that_image() {
-    global $post, $posts;
-    $first_img = 'post_type=jetpack-portfolio';
-    ob_start();
-    ob_end_clean();
-    $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
-    $first_img = $matches[1][0];
+	// Catch the second image
+	function catch_that_image() {
+		global $post, $posts;
+		$first_img = 'post_type=jetpack-portfolio';
+		ob_start();
+		ob_end_clean();
+		$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+		$first_img = $matches[1][0];
 
-  	if(empty($first_img)) {
-      $first_img = "/path/to/default.png";
-    }
-    return $first_img;
-  }
-
-	/**
-	 * This function will connect wp_mail to your authenticated
-	 * SMTP server. This improves reliability of wp_mail, and 
-	 * avoids many potential problems.
-	 *
-	 * Author:     Chad Butler
-	 * Author URI: http://butlerblog.com
-	 *
-	 * For more information and instructions, see:
-	 * http://b.utler.co/Y3
-	 */
-	add_action( 'phpmailer_init', 'send_smtp_email' );
-	function send_smtp_email( $phpmailer ) {
-
-	// Define that we are sending with SMTP
-	$phpmailer->isSMTP();
-
-	// The hostname of the mail server
-	$phpmailer->Host = "smtp.gmail.com";
-
-	// Use SMTP authentication (true|false)
-	$phpmailer->SMTPAuth = true;
-
-	// SMTP port number - likely to be 25, 465 or 587
-	$phpmailer->Port = "587";
-
-	// Username to use for SMTP authentication
-	$phpmailer->Username = "daniel@mundosa.com.br";
-
-	// Password to use for SMTP authentication
-	$phpmailer->Password = "danielmundo";
-
-	// Encryption system to use - ssl or tls
-	$phpmailer->SMTPSecure = "tls";
-
-	$phpmailer->From = "daniel@mundosa.com.br";
-	$phpmailer->FromName = "Daniel Mota";
-	}
-
-		//send form
-		function send_contact_form(){        
-	 
-	    $siteurl = trailingslashit(get_option('home'));
-	    $mailto = get_option('admin_email');
-	    $subject = get_option('blogname'). ' - Novo contato através do site';
-	    $headers = 'From: ' . get_option('blogname') . ' <'. $mailto .'>' . "\r\n";
-	    $headers.= 'Reply-To: '.$_POST['email']. "\r\n";
-	 
-	    $message  = 'Prezado Administrador,' . "\r\n\r\n";
-	    $message .= 'A mensagem abaixo foi enviada através do formulário de contato em ' .date("d/m/Y \à\s H:i:s"). "\r\n\r\n";
-	    $message .= 'MENSAGEM' . "\r\n";
-	    $message .= '-----------------------' . "\r\n";
-	 
-	    while(list($campo, $valor) = each($_POST)){
-	        if($campo != "submit"){
-	 
-	            $message.= ucfirst($campo) .":  ". $valor . "\r\n\r\n";
-	        }
-	 
-	    }    
-	 
-	    $message .= '-----------------------' . "\r\n\r\n";
-	    $message .= 'Atenciosamente,' . "\r\n";
-	    $message .= get_option('blogname') . "\r\n";
-	    $message .= $siteurl . "\r\n\r\n\r\n\r\n";
-	 
-	    // ok let's send the email
-	    if( !wp_mail($mailto, $subject, $message, $headers) ){
-	        echo '<div class = "alert alert-danger" role = "alert" data-dismiss = "alert"><a href = "#" class = "alert-link">Seu e-mail não foi enviado, por favor, tente novamente!</a></div>';
-	    } else {
-	        echo '<div class = "alert alert-success" role = "alert" data-dismiss = "alert" id = "success"><a href = "#" class = "alert-link">Muito obrigado! Seu e-mail foi enviado com sucesso.</a></div>';
-	    }
-	 
+		if(empty($first_img)) {
+		  $first_img = "/path/to/default.png";
+		}
+	    return $first_img;
 	}
 
 	/**
@@ -202,7 +127,5 @@
 	function slug_jetpack_portfolio_cpt() {
 	add_theme_support( 'jetpack-portfolio' );
 	}
-
-
 
  ?>

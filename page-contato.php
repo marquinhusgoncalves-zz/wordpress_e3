@@ -36,14 +36,6 @@ get_header(); ?>
 
 <div class = "clearfix contato">
 
-	<!-- <div class = "visible-xs-inline-block">
-		<img class = "img-contato img-padrao-xs" src = "<?php bloginfo('stylesheet_directory');?>/images/padrao_img_xs.png" />
-	</div>
-
-	<div class = "hidden-xs img-padrao" style = "top: 115px">
-		<img class = "img-contato" style="background-attachment: fixed;" src = "<?php bloginfo('stylesheet_directory');?>/images/padrao_img.png" />
-	</div> -->
-
 	<div class = "container txt-empresa" style = "min-height: 580px">
 		<div class = "col-lg-offset-5 col-sm-offset-4 col-lg-7 col-sm-8" style = "padding: 0 0 60px 0">
 			<div class = "t-texto" style = "padding-bottom: 20px; color: white">
@@ -51,7 +43,6 @@ get_header(); ?>
 			</div>
 
 			<div class = "lista">
-
 
 				<?php if($email){ ?>
 					<div class = "alert alert-success" role = "alert" data-dismiss = "alert">

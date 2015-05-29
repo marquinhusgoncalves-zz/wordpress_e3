@@ -10,7 +10,7 @@ get_header(); ?>
 
 	<div class = "container" style = "padding: 20px 0">
 
-		<div id = "primary" class = "content-area col-lg-8 col-md-8 col-sm-12">
+		<div id = "primary" class = "content-area col-sm-12 col-md-8">
 			<div class = "site-content" role = "main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
