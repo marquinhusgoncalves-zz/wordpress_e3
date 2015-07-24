@@ -38,8 +38,8 @@ get_header(); ?>
 
 	<div class = "container txt-empresa" style = "min-height: 580px">
 		<div class = "col-lg-offset-5 col-sm-offset-4 col-lg-7 col-sm-8" style = "padding: 0 0 60px 0">
-			<div class = "t-texto" style = "padding-bottom: 20px; color: white">
-				ENTRE EM<br>CONTATO
+			<div class = "t-texto caps" style = "padding-bottom: 20px; color: white">
+				entre em<br>contato
 			</div>
 
 			<div class = "lista">

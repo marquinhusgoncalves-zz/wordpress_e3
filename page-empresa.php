@@ -14,8 +14,8 @@ get_header(); ?>
 
 	<div style = "background: url(<?php bloginfo('stylesheet_directory');?>/images/bg_empresa.jpg); background-size: cover; background-position: bottom; height:300px">
 		<div class = "container">
-			<div class = "t-texto" style = "padding-top: 140px; color: white; font-size: 4em">
-				QUEM<br />SOMOS
+			<div class = "titulo-banner caps">
+				quem<br />somos
 			</div>
 		</div>
 	</div>
@@ -32,8 +32,8 @@ get_header(); ?>
 
 	<div style = "background: lightgrey">
 		<div class = "container" style = "padding: 40px 0">
-			<div class = "t-texto" style = "padding: 20px 15px">
-				NOSSA<br />ATUAÇÃO
+			<div class = "t-texto caps" style = "padding: 20px 15px">
+				nossa<br />atuação
 			</div>
 
 			<div class = "clearfix lista">		

@@ -9,52 +9,8 @@
 	<meta name = "viewport" content = "width=device-width">
 	<meta name = "format-detection" content = "telephone=no">
 	<link href = "<?php bloginfo('stylesheet_url'); ?>" rel = "stylesheet">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src = "https://maps.googleapis.com/maps/api/js?v=3.exp"></script>	
-    <script type = "text/javascript">
-	
-	        function initialize() {
-	            var myLatlng = new google.maps.LatLng(-23.589981,-46.824496,17);
-	            var mapOptions = {
-	                zoom: 16,
-	                center: myLatlng,
-	                disableDefaultUI: false,
-	                scrollwheel: false,
-	                draggable: false
-	            }
-	            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-	
-	            var marker = new google.maps.Marker({
-	                position: myLatlng,
-	                map: map,
-	                title: 'E3 Gerenciamento de Empreendimento'
-	            });
-	
-	            var styles = [
-	                {
-	                    stylers: [
-	                        { hue: "#FF8600" },
-	                        { saturation: -20 }
-	                    ]
-	                },{
-	                    featureType: "road",
-	                    elementType: "geometry",
-	                    stylers: [
-	                        { lightness: 100 },
-	                        { visibility: "simplified" }
-	                    ]
-	                },{
-	                    featureType: "road.local",
-	                    elementType: "labels",
-	                }
-	            ];
-	
-	            map.setOptions({styles: styles});
-	        }
-	
-	        google.maps.event.addDomListener(window, 'load', initialize);
-	
-	    </script>
 
 	<?php wp_head(); ?>
 </head>
@@ -62,24 +18,33 @@
 <body>
 
 	<div id = "stage">
-	<div style = "background: #003331">
+	<div style = "background: white">
+
+		<!-- <header class = "topo_fixed header_menu">
+			<a href = "<?php echo esc_url( home_url( '/' ) ); ?>"><img style = "height: 80px; margin: 15px 3%; position: absolute" src = "<?php bloginfo('stylesheet_directory');?>/images/logo_h.svg" alt = "E3 Gerenciamento"></a>
+			<input	type = "checkbox" id = "sidebartoggler" name = "" value = "">	
+				<label class = "toggle visible-xs-inline-block" for = "sidebartoggler">☰</label>
+				<nav class = "nav navbar-nav sidebar visible-xs-inline-block"><?php wp_nav_menu(''); ?></nav>
+				<nav class = "nav navbar-nav hidden-xs" style = "margin: 30px 30px 0"><?php wp_nav_menu(''); ?></nav>
+		</header> -->
+
 
 		<header id = "masthead" class = "site-header container">
 
 			<div class = "col-xs-6 col-sm-4 col-md-5" style = "margin: 10px 0; padding: 0">
 				<a href = "<?php echo esc_url( home_url( '/' ) ); ?>" title = '<?php bloginfo( 'name' ); ?>' rel = "home">
-					<img src = "<?php bloginfo('stylesheet_directory');?>/images/logo_h_pos.svg" style = "height: 80px" />
+					<img src = "<?php bloginfo('stylesheet_directory');?>/images/logo_h.svg" style = "height: 80px" />
 				</a>
 			</div>
-			<div class = "social col-xs-4 visible-xs-inline-block" style = "margin: 33px 0 0 0; padding: 0; display: none">
+			<div class = "social col-xs-4 visible-xs-inline-block" style = "margin-top: 29px; padding: 0; display: none">
 				<div style="position: absolute; right: 0">
-					<a href="https://www.facebook.com/e3gerenciamento"><img class="social_links" src="<?php bloginfo('stylesheet_directory');?>/images/icon_facebook.png" alt="Ícone Facebook"></a>
-					<a href="https://www.linkedin.com/company/e3-gerenciamento-de-empreendimento"><img class="social_links" src="<?php bloginfo('stylesheet_directory');?>/images/icon_linkedin.png" alt="Ícone LinkedIn"></a>	
+					<a href="https://www.facebook.com/e3gerenciamento" target = "_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.linkedin.com/company/9458205" target = "_blank"><i class="fa fa-linkedin"></i></a>	
 				</div>
 			</div>
 
 			<nav class = "nav navbar-default" role = "navigation">	
-				<div class = "container" style = "background: #003331">
+				<div class = "container" style = "background: white">
 				  <div class = "navbar-header"> 
 				    <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-ex-collapse"> 
 				      <span class = "sr-only">Toggle navigation</span> 
@@ -99,9 +64,9 @@
 					  'walker' => new wp_bootstrap_navwalker())
 					);
 					?>
-					<div class="social">
-						<a href="https://www.facebook.com/e3gerenciamento" target="_blank"><img class="hidden-xs social_links" src="<?php bloginfo('stylesheet_directory');?>/images/icon_facebook.png" alt="Ícone Facebook"></a>
-						<a href="https://www.linkedin.com/company/e3-gerenciamento-de-empreendimento" target="_blank"><img class="hidden-xs social_links" src="<?php bloginfo('stylesheet_directory');?>/images/icon_linkedin.png" alt="Ícone LinkedIn"></a>
+					<div class="social hidden-xs">
+						<a href="https://www.facebook.com/e3gerenciamento" target = "_blank"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.linkedin.com/company/9458205" target = "_blank"><i class="fa fa-linkedin"></i></a>
 					</div>
 				  </div>
 				</div>

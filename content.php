@@ -7,7 +7,7 @@
 ?>
 
 <article id = "post-<?php the_ID(); ?>" style = "padding: 15px 0">
-	
+
 	<header class = "entry-header">
 
 		<h2 class = "entry-title">

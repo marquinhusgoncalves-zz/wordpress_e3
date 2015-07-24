@@ -14,8 +14,8 @@ get_header(); ?>
 
 	<div style = "background: url(<?php bloginfo('stylesheet_directory');?>/images/bg_case.jpg); background-size: cover; background-position: bottom; height:300px">
 		<div class = "container">
-			<div class = "t-texto" style = "padding-top: 180px; color: white; font-size: 4em">
-				CASES
+			<div class = "titulo-banner caps">
+				Cases
 			</div>
 		</div>
 	</div>
