@@ -27,38 +27,19 @@
     require_once('wp_bootstrap_navwalker.php');
 
 
-	/*
-	 * Change excerpt text
-	 *
-	 */
-	function custom_excerpt_length( $length ) {
-		return 30;
-	}
-	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+	// /*
+	//  * Change excerpt text
+	//  *
+	//  */
+	// function custom_excerpt_length( $length ) {
+	// return 30;
+	// }
+	// add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-	function new_excerpt_more( $more ) {
-	return ' ... <br><a class="leia-mais" href="'. get_permalink( get_the_ID() ) . '">' . __('Leia mais', ' ') . '</a>';
-	}
-	add_filter( 'excerpt_more', 'new_excerpt_more' );
-
-
-	/*
-	 * Bootstrap
-	 *
-	 */
-	add_filter('show_admin_bar', '__return_false');
-
-	function wpt_register_js() {
-	    wp_register_script('jquery.bootstrap.min', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery');
-	    wp_enqueue_script('jquery.bootstrap.min');
-	}
-	add_action( 'init', 'wpt_register_js' );
-	function wpt_register_css() {
-	    wp_register_style( 'bootstrap.min', get_template_directory_uri() . '/css/bootstrap.min.css' );
-	    wp_enqueue_style( 'bootstrap.min' );
-	}
-	
-	add_action( 'wp_enqueue_scripts', 'wpt_register_css' );
+	// function new_excerpt_more( $more ) {
+	// return ' ... ';
+	// }
+	// add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 	/**
 	 * Theme setup
@@ -120,12 +101,14 @@
 	    return $first_img;
 	}
 
-	/**
-	* Add theme support for Portfolio Custom Post Type.
-	*/
-	add_action( 'after_setup_theme', slug_jetpack_portfolio_cpt );
-	function slug_jetpack_portfolio_cpt() {
-	add_theme_support( 'jetpack-portfolio' );
-	}
+	add_action('init', 'project_custom_init');
 
- ?>
+	// function jptweak_remove_share() {
+	//     remove_filter( 'the_content', 'sharing_display',19 );
+	//     remove_filter( 'the_excerpt', 'sharing_display',19 );
+	//     if ( class_exists( 'Jetpack_Likes' ) ) {
+	//         remove_filter( 'the_content', array( Jetpack_Likes::init(), 'post_likes' ), 30, 1 );
+	//     }
+	// }
+	 
+	// add_action( 'loop_start', 'jptweak_remove_share' );

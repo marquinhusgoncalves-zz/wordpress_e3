@@ -1,16 +1,13 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
-	<meta name="author" content=“Daniel Mota“>
-	<meta name="description" content=“E3 Gerenciamento de obras”>
-	<meta name="keywords" content=“gerenciamento, projetos, oraamentos, obras, construcao civil, mercado imobiliario“>
-	<meta name="robots" content="index, follow">
+	<meta name = "keywords" content = “gerenciamento, projetos, oraamentos, obras, construcao civil, mercado imobiliario“>
 	<meta charset = "<?php bloginfo( 'charset' ); ?>">
 	<meta name = "viewport" content = "width=device-width">
 	<meta name = "format-detection" content = "telephone=no">
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href = "<?php bloginfo('stylesheet_url'); ?>" rel = "stylesheet">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 	<?php wp_head(); ?>
 </head>

@@ -89,4 +89,7 @@ get_header(); ?>
 
 <div id = "map-canvas"></div>
 
+<script src = "https://maps.googleapis.com/maps/api/js?v=3.exp"></script>	
+<script src = "<?php bloginfo('stylesheet_directory');?>/js/mapa.min.js"></script>
+
 <?php get_footer(); ?>

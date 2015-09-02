@@ -27,7 +27,7 @@ get_header(); ?>
 			 	?>
 
 					<?php
-						$catquery = new WP_Query( 'jetpack-portfolio-tag&tag_ID=9&post_type=jetpack-portfolio' );
+						$catquery = new WP_Query( 'jetpack-portfolio-tag&tag_ID=2&post_type=jetpack-portfolio' );
 						while($catquery->have_posts()) : $catquery->the_post();
 					?>
 					<?php

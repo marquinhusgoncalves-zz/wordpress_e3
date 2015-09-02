@@ -20,35 +20,40 @@ get_header(); ?>
 		</div>
 	</div>
 
-	<div class = "container txt-empresa">
-		<div style = "padding: 0 0 80px 0">
-
-			<div>
-				<a href = "http://toledoferrari.com.br/" target = "_blanck">
-					<div class = "col-xs-12 col-sm-4 col-md-3 box-cliente toledo" style = "height: 250px">
-						<div style = "display: table-cell; vertical-align: middle">
-							<img style = "width: 80%" src = "<?php bloginfo('stylesheet_directory');?>/images/toledo_ferrari_color.png" border = "0" alt = "">
-						</div>
-					</div>
-				</a>
-				<a href = "http://dicalconstrutora.com.br/" target = "_blanck">
-					<div class = "col-xs-12 col-sm-4 col-md-3 box-cliente dical" style = "height: 250px">
-						<div style = "display: table-cell; vertical-align: middle">
-							<img style = "width: 80%" src = "<?php bloginfo('stylesheet_directory');?>/images/dical_color.png" border = "0" alt = "">
-						</div>
-					</div>
-				</a>
-				<a href = "http://www.viewco.com.br/" target = "_blanck">
-					<div class = "col-xs-12 col-sm-4 col-md-3 box-cliente view" style = "height: 250px">
-						<div style = "display: table-cell; vertical-align: middle">
-							<img style = "width: 80%" src = "<?php bloginfo('stylesheet_directory');?>/images/view_color.png" border = "0" alt = "">
-						</div>
-					</div>
-				</a>
-					
+	<div class = "container txt-empresa" style = "margin-bottom: 60px">
+		<a href = "http://toledoferrari.com.br/" target = "_blanck">
+			<div class = "col-xs-12 col-sm-4 col-md-3 box-cliente toledo" style = "height: 250px">
+				<div style = "display: table-cell; vertical-align: middle">
+					<img style = "width: 80%; max-width: 300px" src = "<?php bloginfo('stylesheet_directory');?>/images/_clientes/toledo_ferrari_color.png" border = "0" alt = "">
+				</div>
 			</div>
-
+		</a>
+		<a href = "http://dicalconstrutora.com.br/" target = "_blanck">
+			<div class = "col-xs-12 col-sm-4 col-md-3 box-cliente dical" style = "height: 250px">
+				<div style = "display: table-cell; vertical-align: middle">
+					<img style = "width: 80%; max-width: 300px" src = "<?php bloginfo('stylesheet_directory');?>/images/_clientes/dical_color.png" border = "0" alt = "">
+				</div>
+			</div>
+		</a>
+		<a href = "http://www.viewco.com.br/" target = "_blanck">
+			<div class = "col-xs-12 col-sm-4 col-md-3 box-cliente view" style = "height: 250px">
+				<div style = "display: table-cell; vertical-align: middle">
+					<img style = "width: 80%; max-width: 300px" src = "<?php bloginfo('stylesheet_directory');?>/images/_clientes/view_color.png" border = "0" alt = "">
+				</div>
+			</div>
+		</a>
+		<div class = "col-xs-12 col-sm-4 col-md-3 box-cliente generico" style = "height: 250px">
+			<div style = "display: table-cell; vertical-align: middle">
+				<img style = "width: 90%; max-width: 300px" src = "<?php bloginfo('stylesheet_directory');?>/images/_clientes/romaniluiz.png" border = "0" alt = "">
+			</div>
 		</div>
+		<a href = "http://www.moroco.com.br/" target = "_blanck">
+			<div class = "col-xs-12 col-sm-4 col-md-3 box-cliente moroco" style = "height: 250px">
+				<div style = "display: table-cell; vertical-align: middle">
+					<img style = "height: 60%; max-width: 300px" src = "<?php bloginfo('stylesheet_directory');?>/images/_clientes/logo_moroco.png" border = "0" alt = "">
+				</div>
+			</div>
+		</a>
 	</div>
 
 </div>

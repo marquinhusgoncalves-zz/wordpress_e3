@@ -46,7 +46,7 @@
 	<div class = "clearfix" style = "background-color: white !important; height: auto">
 		<div class = "container">
 		<?php if (have_posts()) :
-				  $aRecentPosts = new WP_Query("showposts=2");
+				  $aRecentPosts = new WP_Query( "showposts=2" );
 				  while($aRecentPosts->have_posts()) : $aRecentPosts->the_post();
 					?>
 					<?php

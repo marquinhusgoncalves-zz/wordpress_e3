@@ -12,16 +12,16 @@ get_header(); ?>
 
 <div class = "clearfix">
 
-	<div class = "visible-xs-inline-block">
+	<div class = "visible-xs-inline-block visible-sm-inline-block">
 		<img class = "img-servico img-padrao-xs" src = "<?php bloginfo('stylesheet_directory');?>/images/padrao_img_xs.png" />
 	</div>
 
-	<div class = "hidden-xs img-padrao" style = "top: 115px">
+	<div class = "hidden-xs hidden-sm img-padrao" style = "top: 115px">
 		<img class = "img-servico" style = "background-attachment: fixed;" src = "<?php bloginfo('stylesheet_directory');?>/images/padrao_img.png" />
 	</div>
 
 	<div class = "container txt-empresa">
-		<div class = "col-lg-offset-5 col-sm-offset-4 col-lg-7 col-sm-8" style = "padding: 0 0 60px 0">
+		<div class = "col-lg-offset-5 col-md-offset-4 col-lg-7 col-md-8" style = "padding: 0 0 60px 0">
 			<div class = "t-texto" style = "padding-bottom: 80px">
 				Detalhamento dos<br>
 				Serviços por fase do<br>

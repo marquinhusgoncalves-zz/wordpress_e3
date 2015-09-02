@@ -7,8 +7,6 @@ Author: Daniel Mota
 Author URI: http://behance.net/danielsmota
 */
 
-@import url('css/bootstrap.min.css');
-
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,800);
 @import url(http://fonts.googleapis.com/css?family=Raleway:900);
@@ -68,7 +66,7 @@ i:hover, i:focus, i:active {
 h1 a, h2 a, h3 a {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 300;
-	font-size: 1em;
+	font-size: 1.3em;
 	color: #252525 !important;
 }
 h1 a:hover, h2 a:hover, h3 a:hover {
@@ -257,7 +255,7 @@ a:focus, a:hover {
 }
 .social_links {
 	width: 35px;
-    height: 35px;
+	height: 35px;
 }
 @media (max-width: 768px) {
 	.navbar-collapse {
@@ -425,6 +423,9 @@ a:focus, a:hover {
 .entry-summary p:last-child {
 	margin-bottom: 0;
 }
+.post-inner-content p {
+	font-size: 1.4em;
+}
 .entry-footer {
 	padding: 2.34375% 3.125%;
 	border-top: 1px solid rgba(0, 0, 0, 0.07);
@@ -444,16 +445,16 @@ a:focus, a:hover {
 	position: relative;
 	float: right;
 	background-color: rgba(15,165,217,0.7);
-    -webkit-border-radius: 24px;
-    border-radius: 24px;
-    color: #FFFFFF;
-    font-size: 12px;
-    font-weight: 700;
-    height: 48px;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 48px;
+	-webkit-border-radius: 24px;
+	border-radius: 24px;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: 700;
+	height: 48px;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 48px;
 }
 .entry-time-day {
 	display: block;
@@ -462,9 +463,9 @@ a:focus, a:hover {
 }
 .entry-time-month {
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
-    display: inline-block;
-    line-height: 1;
-    padding: 3px 0 0;
+	display: inline-block;
+	line-height: 1;
+	padding: 3px 0 0;
 }
 .entry-summary {
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -517,13 +518,16 @@ a:focus, a:hover {
 	height: 250px;
 	display: table;
 }
-.img-thumb img {
+.img-thumb {
 	width: 100%;
-	height: auto;
-	min-height: 320px;
+	height: 200px;
+	background-color: grey;
+	background-size: cover !important;
+	background-position: right, left center !important;
+	margin-bottom: 30px;
+
 }
 .img-category img {
-	width: 100%;
 	max-width: 220px;
 	height: auto;
 	max-height: 220px;
@@ -672,11 +676,19 @@ aside ul li {
 	.t-texto {
 		font-size: 2em;
 	}
+	.img-category img {
+		max-width: 100%;
+	}
 }
 
 /* SERVIÇOS */
 .img-servico {
 	background: url('../e3_theme/images/bg_servicos.jpg');
+	background-size: cover;
+	background-position: right center;
+}
+.img-posobra {
+	background: url('../e3_theme/images/bg_posobra.jpg');
 	background-size: cover;
 	background-position: right center;
 }
@@ -703,21 +715,33 @@ aside ul li {
 	text-align: center;
 	display: table;
 }
+.generico {
+	height: 40%;
+	background-image: url("../e3_theme/images/_clientes/bg_generico.jpg");
+	background-size: cover;
+	background-position: center;
+}
 .toledo {
 	height: 40%;
-	background-image: url("../e3_theme/images/bg_toledo.jpg");
+	background-image: url("../e3_theme/images/_clientes/bg_toledo.jpg");
 	background-size: cover;
 	background-position: center;
 }
 .dical {
 	height: 40%;
-	background-image: url("../e3_theme/images/bg_dical.jpg");
+	background-image: url("../e3_theme/images/_clientes/bg_dical.jpg");
 	background-size: cover;
 	background-position: center;
 }
 .view {
 	height: 40%;
-	background-image: url("../e3_theme/images/bg_view.jpg");
+	background-image: url("../e3_theme/images/_clientes/bg_view.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.moroco {
+	height: 40%;
+	background-image: url("../e3_theme/images/_clientes/bg_moroco.jpg");
 	background-size: cover;
 	background-position: center;
 }
@@ -764,12 +788,9 @@ aside ul li {
 	}
 }
 @media (max-width: 991px) {
-	.align-mobile {
-		text-align: center;
-	}
 	.seta {
-	    -ms-transform: rotate(90deg); /* IE 9 */
-   		-webkit-transform: rotate(90deg); /* Safari */
-    	transform: rotate(90deg);
+		-ms-transform: rotate(90deg); /* IE 9 */
+		-webkit-transform: rotate(90deg); /* Safari */
+		transform: rotate(90deg);
 	}
 }
