@@ -17,15 +17,15 @@
 				</div> -->
 				
 				<div class = "item active" onClick = "javascript:window.location.href='pos-obra/#vistoria'" style = "background: url(<?php bloginfo('stylesheet_directory');?>/images/banners/04.jpg) no-repeat center">
-					<img class = "banner-texto" src = "<?php bloginfo('stylesheet_directory');?>/images/banners/04.png">
+					<img class = "banner-texto" src = "<?php bloginfo('stylesheet_directory');?>/images/banners/04.png" alt = "pós obra vistoria">
 				</div>
 
 				<div class = "item" onClick = "javascript:window.location.href='pos-obra/#assistencia'" style = "background: url(<?php bloginfo('stylesheet_directory');?>/images/banners/05.jpg) no-repeat center">
-					<img class = "banner-texto" src = "<?php bloginfo('stylesheet_directory');?>/images/banners/05.png">
+					<img class = "banner-texto" src = "<?php bloginfo('stylesheet_directory');?>/images/banners/05.png" alt = "pós obra assistência">
 				</div>
 
 				<div class = "item" onClick = "javascript:window.location.href='pos-obra/#estoque'" style = "background: url(<?php bloginfo('stylesheet_directory');?>/images/banners/06.jpg) no-repeat center">
-					<img class = "banner-texto" src = "<?php bloginfo('stylesheet_directory');?>/images/banners/06.png">
+					<img class = "banner-texto" src = "<?php bloginfo('stylesheet_directory');?>/images/banners/06.png" alt = "pós obra estoque">
 				</div>
 			
 			</div>
@@ -62,15 +62,10 @@
 
 	<!-- Texto o que fazemos -->
 	<div class = "container" style = "display: table; padding: 5% 0;">
-		<!-- <div class = "img-oqf col-xs-12 col-sm-5" style = "padding-bottom: 30px">
-			<img src = "<?php bloginfo('stylesheet_directory');?>/images/icon_prazo.png">
-			<img src = "<?php bloginfo('stylesheet_directory');?>/images/icon_execucao.png">
-			<img src = "<?php bloginfo('stylesheet_directory');?>/images/icon_custo.png">
-		</div> -->
 		<div class = "col-xs-12" style = "text-align: center">
-			<img style ="max-width: 120px; width: 26%; margin: 0 3%" src = "<?php bloginfo('stylesheet_directory');?>/images/icon_custo.png">
-			<img style ="max-width: 120px; width: 26%; margin: 0 3%" src = "<?php bloginfo('stylesheet_directory');?>/images/icon_prazo.png">
-			<img style ="max-width: 120px; width: 26%; margin: 0 3%" src = "<?php bloginfo('stylesheet_directory');?>/images/icon_execucao.png">
+			<img style ="max-width: 120px; width: 26%; margin: 0 3%" src = "<?php bloginfo('stylesheet_directory');?>/images/icon_custo.png" alt = "custo">
+			<img style ="max-width: 120px; width: 26%; margin: 0 3%" src = "<?php bloginfo('stylesheet_directory');?>/images/icon_prazo.png" alt = "prazo">
+			<img style ="max-width: 120px; width: 26%; margin: 0 3%" src = "<?php bloginfo('stylesheet_directory');?>/images/icon_execucao.png" alt = "execução">
 		</div>
 
 		<div class = "col-xs-12 oqf" style = "display: table-cell; vertical-align: middle; margin-top: 25px; white-space: normal; text-align: center">

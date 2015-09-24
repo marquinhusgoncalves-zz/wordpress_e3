@@ -1,7 +1,8 @@
-<html <?php language_attributes(); ?>>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?> class = "no-js">
 <head>
 	<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
-	<meta name = "keywords" content = “gerenciamento, projetos, oraamentos, obras, construcao civil, mercado imobiliario“>
+	<meta name = "keywords" content = "gerenciamento, projetos, oraamentos, obras, construcao civil, mercado imobiliario">
 	<meta charset = "<?php bloginfo( 'charset' ); ?>">
 	<meta name = "viewport" content = "width=device-width">
 	<meta name = "format-detection" content = "telephone=no">
@@ -17,20 +18,11 @@
 	<div id = "stage">
 	<div style = "background: white">
 
-		<!-- <header class = "topo_fixed header_menu">
-			<a href = "<?php echo esc_url( home_url( '/' ) ); ?>"><img style = "height: 80px; margin: 15px 3%; position: absolute" src = "<?php bloginfo('stylesheet_directory');?>/images/logo_h.svg" alt = "E3 Gerenciamento"></a>
-			<input	type = "checkbox" id = "sidebartoggler" name = "" value = "">	
-				<label class = "toggle visible-xs-inline-block" for = "sidebartoggler">☰</label>
-				<nav class = "nav navbar-nav sidebar visible-xs-inline-block"><?php wp_nav_menu(''); ?></nav>
-				<nav class = "nav navbar-nav hidden-xs" style = "margin: 30px 30px 0"><?php wp_nav_menu(''); ?></nav>
-		</header> -->
-
-
 		<header id = "masthead" class = "site-header container">
 
 			<div class = "col-xs-6 col-sm-4 col-md-5" style = "margin: 10px 0; padding: 0">
 				<a href = "<?php echo esc_url( home_url( '/' ) ); ?>" title = '<?php bloginfo( 'name' ); ?>' rel = "home">
-					<img src = "<?php bloginfo('stylesheet_directory');?>/images/logo_h.svg" style = "height: 80px" />
+					<img src = "<?php bloginfo('stylesheet_directory');?>/images/logo_h.svg" style = "height: 80px" alt = "e3 gerenciamento" />
 				</a>
 			</div>
 			<div class = "social col-xs-4 visible-xs-inline-block" style = "margin-top: 29px; padding: 0; display: none">
@@ -40,7 +32,7 @@
 				</div>
 			</div>
 
-			<nav class = "nav navbar-default" role = "navigation">	
+			<nav class = "nav navbar-default">	
 				<div class = "container" style = "background: white">
 				  <div class = "navbar-header"> 
 				    <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-ex-collapse"> 
