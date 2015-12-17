@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+	<?php include_once("analyticstracking.php") ?>
 	<div id = "stage">
 	<div style = "background: white">
 
