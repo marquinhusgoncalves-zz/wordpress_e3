@@ -750,11 +750,37 @@ aside ul li {
 .contato {
 	background: url('../e3_theme/images/bg_contato.jpg');
 	background-size: cover;
-	background-position: right
+	background-position: right;
 }
 .img-contato {
 	background: url('../e3_theme/images/bg_contato.jpg');
 	background-size: cover;
+}
+
+/* APROCIMA */
+
+.aprocima_banner {
+	background: url('../e3_theme/images/banners/07.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#aprocima p, #aprocima ul li {
+	font-size: 1.4em;
+}
+#aprocima p {
+	margin-bottom: 30px;
+}
+#aprocima ul li, #aprocima strong {
+	font-family: 'Raleway', sans-serif !important;
+	font-weight: 500;
+}
+#tg_gd {
+	position: absolute;
+	top: 360px;
+	width: 620px;
+}
+.upcase {
+	text-transform: uppercase;
 }
 
 /* FOOTER */
@@ -792,5 +818,10 @@ aside ul li {
 		-ms-transform: rotate(90deg); /* IE 9 */
 		-webkit-transform: rotate(90deg); /* Safari */
 		transform: rotate(90deg);
+	}
+	.aprocima_banner {
+		background: url('../e3_theme/images/banners/07xs.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 }

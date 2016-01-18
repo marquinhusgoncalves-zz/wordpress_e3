@@ -15,8 +15,10 @@
 						<div class = "carousel-text">CUS<br/>TOS</div>
 					</div>
 				</div> -->
+
+				<div class = "aprocima_banner item active" onClick = "javascript:window.location.href='aprocima/'"></div>
 				
-				<div class = "item active" onClick = "javascript:window.location.href='pos-obra/#vistoria'" style = "background: url(<?php bloginfo('stylesheet_directory');?>/images/banners/04.jpg) no-repeat center">
+				<div class = "item" onClick = "javascript:window.location.href='pos-obra/#vistoria'" style = "background: url(<?php bloginfo('stylesheet_directory');?>/images/banners/04.jpg) no-repeat center">
 					<img class = "banner-texto" src = "<?php bloginfo('stylesheet_directory');?>/images/banners/04.png" alt = "pós obra vistoria">
 				</div>
 
